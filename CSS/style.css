@@ -20,9 +20,17 @@ h1, h2 {color: black;}
 }
 
 [class*="col-"] { 
+    position: relative;
     height: 40px;
     border: solid 1px;
     background-color: rgb(0, 119, 255);
+}
+
+[class^="col-"] > span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .row{
